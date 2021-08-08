@@ -3,6 +3,7 @@ import requests
 # Set this to your path to Discord
 path2DiscordToken = r"C:\Users\phili\AppData\Local\Discord\token.txt"
 
+# enter the message you want to send here
 message = "cs?"
 
 # the names of people you have put in your contacts
@@ -39,7 +40,6 @@ def GetChannelIDs():
 token = GetToken(path2DiscordToken)
 contactIDs = GetChannelIDs()
 
-print(contactIDs)
 
 payload = {
 	"content": message
